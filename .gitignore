@@ -15,7 +15,11 @@ _archive/
 # Large animation (~12 MB); regenerate with visualize.py trajectory --gif
 trajectory.gif
 
-# Checkpoints other than the two the README uses
+# Checkpoints other than the ones the README uses
 *.pt
 !dqn.pt
 !dqn_vanilla.pt
+!runs/*.pt
+
+# Console logs of the multi-seed runs (the CSVs hold the same numbers)
+runs/*.log

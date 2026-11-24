@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import random
 import time
 import numpy as np
 import torch
@@ -87,6 +88,7 @@ def main():
     args = ap.parse_args()
 
     device = resolve_device(args.device)
+    random.seed(args.seed)  # epsilon-greedy draws and uniform replay sampling
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
     env = ElevatorEnv(seed=args.seed)
