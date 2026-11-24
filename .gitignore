@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local tooling / editor settings
+.claude/
+.vscode/
+.idea/
+
+# Moved-aside files (duplicates, old README) -- kept locally, not published
+_archive/
+
+# Large animation (~12 MB); regenerate with visualize.py trajectory --gif
+trajectory.gif
+
+# Checkpoints other than the two the README uses
+*.pt
+!dqn.pt
+!dqn_vanilla.pt
