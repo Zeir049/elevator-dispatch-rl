@@ -28,7 +28,7 @@ The simulator is a small event-driven Python environment with a Gymnasium-style 
 | Arrivals | Fixed counts per 5-min bucket `[36, 56, 75, 105, 73, 34]`, arrival times uniform within each bucket |
 | Destinations | Uniform over floors 2–10 |
 
-The arrival counts were observed in person every Tuesday during the capstone project period, in the ground-floor (1F) lobby of Hannuri-gwan (한누리관) at Sangmyung University's Cheonan Campus, in the 08:40–09:10 window. Only the six bucket counts come from this observation. They are hard-coded in `elevator_env.py`, and the raw observation data is not in this repo. Destinations and timings are assumptions.
+The arrival counts were observed in person every Tuesday during the capstone project period, in the ground-floor (1F) lobby of Hannuri-gwan (한누리관) at Sangmyung University's Cheonan Campus, in the 08:40–09:10 window. The six bucket counts are most likely averages over the observed Tuesdays. The per-day counts were not kept, so this cannot be checked. Only these six counts come from the observation, and they are hard-coded in `elevator_env.py`. Destinations and timings are assumptions.
 
 ## MDP
 
